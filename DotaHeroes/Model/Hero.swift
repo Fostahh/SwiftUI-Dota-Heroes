@@ -7,21 +7,20 @@
 
 import Foundation
 
-
-
-
-struct Transaction : Identifiable {
-    let uuid = UUID()
-    let id: Int
-    let name: String
-    let category: String
-    let value: Int
-    let isIncome: Bool
+struct Hero: Codable, Hashable {
+    let id : Int
+    let name : String
+    let attribute: PrimaryAttribute
+    
+    enum CodingKeys : String, CodingKey {
+        case id
+        case name = "localized_name"
+        case attribute = "primary_attr"
+    }
 }
 
-let dummyTransaction = [
-    Transaction(id: 1, name: "Samuel Suhi", category: "Transfer", value: 50000, isIncome: true),
-    Transaction(id: 2, name: "Spotify", category: "Subscription", value: 49000, isIncome: false),
-    Transaction(id: 3, name: "Netflix", category: "Subscription", value: 149000, isIncome: false),
-    Transaction(id: 4, name: "Bobi Sammy", category: "Transfer", value: 1150000, isIncome: true),
-]
+enum PrimaryAttribute : String, Codable {
+    case agi = "agi"
+    case int = "int"
+    case str = "str"
+}

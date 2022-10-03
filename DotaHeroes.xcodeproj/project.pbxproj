@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A18B3A2E28EB1F1300AE201F /* DotaHeroesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A2D28EB1F1300AE201F /* DotaHeroesApp.swift */; };
 		A18B3A3028EB1F1300AE201F /* ListHeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A2F28EB1F1300AE201F /* ListHeroesView.swift */; };
 		A18B3A3228EB1F1500AE201F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18B3A3128EB1F1500AE201F /* Assets.xcassets */; };
 		A18B3A3528EB1F1500AE201F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A18B3A3428EB1F1500AE201F /* Preview Assets.xcassets */; };
@@ -15,6 +14,7 @@
 		A18B3A4928EB1F1500AE201F /* DotaHeroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A4828EB1F1500AE201F /* DotaHeroesUITests.swift */; };
 		A18B3A4B28EB1F1500AE201F /* DotaHeroesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A4A28EB1F1500AE201F /* DotaHeroesUITestsLaunchTests.swift */; };
 		A18B3A5928EB229300AE201F /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A5828EB229300AE201F /* Hero.swift */; };
+		A18B3A5C28EB2CA800AE201F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B3A5B28EB2CA800AE201F /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		A18B3A2A28EB1F1300AE201F /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A18B3A2D28EB1F1300AE201F /* DotaHeroesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesApp.swift; sourceTree = "<group>"; };
 		A18B3A2F28EB1F1300AE201F /* ListHeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeroesView.swift; sourceTree = "<group>"; };
 		A18B3A3128EB1F1500AE201F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A18B3A3428EB1F1500AE201F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		A18B3A4828EB1F1500AE201F /* DotaHeroesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesUITests.swift; sourceTree = "<group>"; };
 		A18B3A4A28EB1F1500AE201F /* DotaHeroesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A18B3A5828EB229300AE201F /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		A18B3A5B28EB2CA800AE201F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +96,8 @@
 		A18B3A2C28EB1F1300AE201F /* DotaHeroes */ = {
 			isa = PBXGroup;
 			children = (
+				A18B3A5A28EB2C9A00AE201F /* ViewModel */,
 				A18B3A5728EB228900AE201F /* Model */,
-				A18B3A2D28EB1F1300AE201F /* DotaHeroesApp.swift */,
 				A18B3A2F28EB1F1300AE201F /* ListHeroesView.swift */,
 				A18B3A3128EB1F1500AE201F /* Assets.xcassets */,
 				A18B3A3328EB1F1500AE201F /* Preview Content */,
@@ -136,6 +136,14 @@
 				A18B3A5828EB229300AE201F /* Hero.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A18B3A5A28EB2C9A00AE201F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A18B3A5B28EB2CA800AE201F /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A18B3A3028EB1F1300AE201F /* ListHeroesView.swift in Sources */,
-				A18B3A2E28EB1F1300AE201F /* DotaHeroesApp.swift in Sources */,
+				A18B3A5C28EB2CA800AE201F /* ViewModel.swift in Sources */,
 				A18B3A5928EB229300AE201F /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
